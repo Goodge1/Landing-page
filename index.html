@@ -16,28 +16,56 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Add this in the head section, before your stylesheet link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="header">
-            <a src="">Logo</a>
-            <a src="">Link one</a>
-            <a src="">Link two</a>
-            <a src="">Link three</a>
+            <a href=".hero">
+                <img src="/images/logo.png" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href=".features">Features</a>
+                <a href=".quote">Quote</a>
+                <a href=".cta">Call to action</a>
+            </div>
         </div>
     </header>
 
     <main>
         <section id="hero">
-            <h1>Welcome to Your Site</h1>
-            <p>Your main content goes here.</p>
-            <button>Sign up</button>
+            <div class="hero-text">
+                <h1>Welcome to Your Site</h1>
+                <p>Your main content goes here.</p>
+                <button>Sign up</button>
+            </div>
+            <div class="hero-image">
+                <a src=""></a>
+            </div>
         </section>
-        <div></div>
+
+        <section id="features">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section id="quote">
+            <div></div>
+        </section>
+
+        <section id="cta">
+            <div></div>
+        </section>
+        
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Your Site Name. All rights reserved.</p>
     </footer>
 

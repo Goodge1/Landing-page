@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial, sans-serif';
+}
+
+body {
+    background-color: #0A192F;
+    color: aliceblue;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #64FFDA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a7ffeb;
+}
+
+.logo {
+    width: 48px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0;
+}
+
+.body {
+    display: flex;
+}
