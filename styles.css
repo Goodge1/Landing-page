@@ -6,10 +6,18 @@ html {
 body {
     background-color: #0A192F;
     color: aliceblue;
-    margin: 0 80px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for consistent content margins */
+.container {
+    max-width: calc(100% - 160px); /* 80px from each side */
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
 }
 
 a {
@@ -19,6 +27,30 @@ a {
 
 a:hover {
     color: #a7ffeb;
+}
+
+section {
+    width: 100%;
+    padding: 60px 0;
+    position: relative;
+}
+
+#hero {
+    background-color: #0A192F;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#features {
+    background-color: #fff;
+    color: #333; /* Darker text for light background */
+}
+
+.body {
+    flex: 1;
 }
 
 .logo {
@@ -39,13 +71,8 @@ a:hover {
     margin-bottom: 48px;
 }
 
-.body {
-    flex: 1;
-}
-
-#hero {
-    display: flex;
-    justify-content: space-between;
+.container #hero {
+flex-direction: row;
 
 }
 
@@ -83,4 +110,11 @@ a:hover {
 
 .hero-text {
     flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: calc(100% - 40px); /* Smaller margins on mobile */
+    }
 }
