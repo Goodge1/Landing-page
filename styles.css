@@ -20,6 +20,7 @@ body {
     width: 100%;
     position: relative;
     padding: 0;
+    height: 400px;
 }
 
 a {
@@ -116,7 +117,7 @@ section {
 
 /* CTA section */
 #cta {
-    background-color: #64FFDA;
+    background-color: #FFF;
     color: #0f4639;
 }
 
@@ -218,6 +219,36 @@ section {
     display: block;
 }
 
+/* CTA styling */
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #43c6c6;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.cta-text {
+    flex: 1;
+}
+
+.cta-text h2 {
+    color: #000;
+}
+
+.cta-text p {
+    color: #373737;
+}
+.cta-button {
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    padding: 12px 24px;
+}
 /* Footer styling */
 .footer {
     background-color: #071425;
