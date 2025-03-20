@@ -9,6 +9,7 @@ body {
     margin: 0 80px;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;;
 }
 
 a {
@@ -35,8 +36,51 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0 0;
+    margin-bottom: 48px;
 }
 
 .body {
+    flex: 1;
+}
+
+#hero {
     display: flex;
+    justify-content: space-between;
+
+}
+
+.hero-text h1 {
+    color: #eee;
+}
+
+.hero-text p {
+    color: #b0b0b0;
+}
+
+.hero-cta {
+    padding: 12px 24px;
+    background-color: #64FFDA;
+    color: #0f4639;
+    border-radius: 10px;
+    width: fit-content;
+
+}
+
+.hero-img {
+    width: 50%;
+    height: auto;
+}
+
+.hero-text, .image-container {
+    display: flex;
+    flex: 1;
+}
+
+.image-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    flex-direction: column;
 }
